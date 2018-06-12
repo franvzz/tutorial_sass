@@ -1,0 +1,27 @@
+/**
+*  SCSS
+*   - Este comentario si aparece en archivo css
+*/
+
+// -- Este comentario no se muestra en archivo css
+
+// -- Variables
+$color-rosa: #414141;
+$bg-color:#eee;
+$font-size:3em;
+$todo:100%;
+
+body {
+  background:$bg-color; color:$color-rosa;
+}
+
+.page {
+  width: $todo / 2; // dividir 100% / 2
+
+  p, div {
+    font-size: $font-size;
+    a { font-weight: bold; }
+  }
+
+  pre { font-size: $font-size; }
+}

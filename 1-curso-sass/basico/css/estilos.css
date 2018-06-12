@@ -1,0 +1,18 @@
+/**
+*  SCSS
+*   - Este comentario si aparece en archivo css
+*/
+body {
+  background: #eee;
+  color: #414141; }
+
+.page {
+  width: 50%; }
+  .page p, .page div {
+    font-size: 3em; }
+    .page p a, .page div a {
+      font-weight: bold; }
+  .page pre {
+    font-size: 3em; }
+
+/*# sourceMappingURL=estilos.css.map */

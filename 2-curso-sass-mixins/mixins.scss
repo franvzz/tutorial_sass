@@ -1,0 +1,39 @@
+//-- Mixins
+@mixin titulos($f_size, $f_weight, $color:#000) {
+  margin: 0 0 20px 0;
+  font-family: Georgia, serif;
+  font-size: $f_size;
+  font-weight: $f_weight;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin shadow($x, $y, $blur, $color:ccc) {
+  -webkit-box-shadow: $x $y $blur $color;
+  -moz-box-shadow: $x $y $blur $color;
+  box-shadow: $x $y $blur $color;
+}
+
+.container {
+  @include shadow(1px, 2px, 5px, rgba(0,0,0,.6));
+}
+
+h1 {
+  @include titulos(36px, 500, #333);
+}
+
+h2 {
+  @include titulos(30px, 400, #777);
+}
+
+h3 {
+  @include titulos(24px, 300, #ccc);
+}
+
+h4 {
+  @include titulos(18px, bold, #212121);
+}
+
+h5 {
+  @include titulos(18px, bold);
+}
